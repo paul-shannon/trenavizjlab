@@ -1,6 +1,6 @@
 {
   "name": "trenavizjlab",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ipywidget for trena",
   "author": "Paul Shannon",
   "main": "src/index.js",
