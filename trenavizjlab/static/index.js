@@ -111,7 +111,7 @@ var HelloModel = widgets.DOMWidgetModel.extend({
 
 
 // Custom View. Renders the widget model.
-var HelloView = widgets.DOMWidgetView.extend({
+var trenaVizView = widgets.DOMWidgetView.extend({
     render: function() {
         this.value_changed();
         this.model.on('change:value', this.value_changed, this);
@@ -124,8 +124,8 @@ var HelloView = widgets.DOMWidgetView.extend({
 
 
 module.exports = {
-    HelloModel : HelloModel,
-    HelloView : HelloView
+    trenaVizModel : trenaVizModel,
+    trenaVizView : trenaVizView
 };
 
 
@@ -17286,7 +17286,7 @@ module.exports = function(module) {
 /* 6 */
 /***/ (function(module, exports) {
 
-module.exports = {"name":"trenavizjlab","version":"0.1.1","description":"ipywidget for trena","author":"Paul Shannon","main":"src/index.js","repository":{"type":"git","url":"https://github.com/paul-shannon/trenavizjlab.git"},"keywords":["jupyter","widgets","ipython","ipywidgets"],"files":["src/**/*.js","dist/*.js"],"scripts":{"clean":"rimraf dist/","prepublish":"webpack","test":"echo \"Error: no test specified\" && exit 1"},"devDependencies":{"webpack":"^3.5.5","rimraf":"^2.6.1"},"dependencies":{"@jupyter-widgets/base":"^1.0.0","lodash":"^4.17.4"},"jupyterlab":{"extension":"src/extension-jupyterlab"}}
+module.exports = {"name":"trenavizjlab","version":"0.1.2","description":"ipywidget for trena","author":"Paul Shannon","main":"src/index.js","repository":{"type":"git","url":"https://github.com/paul-shannon/trenavizjlab.git"},"keywords":["jupyter","widgets","ipython","ipywidgets"],"files":["src/**/*.js","dist/*.js"],"scripts":{"clean":"rimraf dist/","prepublish":"webpack","test":"echo \"Error: no test specified\" && exit 1"},"devDependencies":{"webpack":"^3.5.5","rimraf":"^2.6.1"},"dependencies":{"@jupyter-widgets/base":"^1.0.0","lodash":"^4.17.4"},"jupyterlab":{"extension":"src/extension-jupyterlab"}}
 
 /***/ })
 /******/ ])});;
