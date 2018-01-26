@@ -27,6 +27,7 @@ var trenaVizView = widgets.DOMWidgetView.extend({
    createDiv: function(){
       var self = this;
       var tabsOuterDiv = $("<div id='tabsOuterDiv'></div>");
+      /**************
       var tabsList = $("<ul></ul>");
       tabsList.append("<li><a href='#igvTab'>igv</a></li>");
       tabsList.append("<li><a href='#cyjsTab'>cyjs</a></li>")
@@ -46,12 +47,13 @@ var trenaVizView = widgets.DOMWidgetView.extend({
       cyjsTab.append(cyjsDiv);
 
       var igvTab = $("<div id='igvTab'></div>");
-      var igvDiv = $("<div id='igvDiv'></div>");
       igvTab.append(igvDiv);
 
       tabsOuterDiv.append(tabsList);
-      tabsOuterDiv.append(igvTab);
       tabsOuterDiv.append(cyjsTab);
+      **********/
+      var igvDiv = $("<div id='igvDiv'></div>");
+      tabsOuterDiv.append(igvDiv);
       return(tabsOuterDiv);
       },
 
