@@ -6,7 +6,7 @@ build/
 node_modules/
 
 # Compiled javascript
-ipyTrenaViz/static/
+trenavizjlab/static/
 
 # OS X
 .DS_Store

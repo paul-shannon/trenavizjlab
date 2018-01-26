@@ -17,10 +17,10 @@ var _ = require('lodash');
 
 // When serialiazing the entire widget state for embedding, only values that
 // differ from the defaults will be specified.
-var HelloModel = widgets.DOMWidgetModel.extend({
+var trenaVizModel = widgets.DOMWidgetModel.extend({
     defaults: _.extend(widgets.DOMWidgetModel.prototype.defaults(), {
-        _model_name : 'HelloModel',
-        _view_name : 'HelloView',
+        _model_name : 'trenaVizModel',
+        _view_name : 'trenaVizView',
         _model_module : 'trenavizjlab',
         _view_module : 'trenavizjlab',
         _model_module_version : '0.1.0',
