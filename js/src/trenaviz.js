@@ -1,5 +1,6 @@
 var widgets = require('@jupyter-widgets/base');
 var _ = require('lodash');
+var $ = require('jquery');
 var cytoscape = require('cytoscape');
 var igv = require('igv');
 require('igv/igv.css');
@@ -87,7 +88,7 @@ var trenaVizView = widgets.DOMWidgetView.extend({
 
       var self = this;
       this.$el.append(this.createDiv());
-      setTimeout(function(){$("#tabsOuterDiv").tabs()}, 0);
+      //setTimeout(function(){$("#tabsOuterDiv").tabs()}, 0);
       //setTimeout(function(){self.createCyjs();}, 1000)
       this.listenTo(this.model, 'change:msgFromKernel', this.dispatchRequest, this);
       },
